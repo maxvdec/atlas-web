@@ -1,7 +1,8 @@
 module.exports = {
     theme: {
         fontFamily: {
-            sans: ['Vazirmatn', 'ui-sans-serif', 'system-ui'],
+            titles: ['Vazirmatn', 'ui-sans-serif', 'system-ui'],
+            sans: ['Inter', 'ui-sans-serif', 'system-ui'],
         }
     }
 }
