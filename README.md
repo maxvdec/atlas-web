@@ -1,43 +1,61 @@
-# Astro Starter Kit: Minimal
+# Atlas Website
 
-```sh
-bun create astro@latest -- --template minimal
+![GitHub contributors](https://img.shields.io/github/contributors/maxvdec/atlas-web)
+![GitHub last commit](https://img.shields.io/github/last-commit/maxvdec/atlas-web)
+![Tests](https://github.com/maxvdec/atlas-web/actions/workflows/build.yaml/badge.svg)
+![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/maxvdec/atlas-web)
+![GitHub Repo stars](https://img.shields.io/github/stars/maxvdec/atlas-web)
+
+This repository contains the source code for the Atlas Website. It is built using modern web technologies to provide an engaging and informative experience for visitors.
+
+It will contain the documentation as well as some tutorials and resources related to Atlas.
+
+Check Atlas out at: [maxvdec/atlas](https://github.com/maxvdec/atlas)
+
+The website is not yet live, but stay tuned for updates!
+
+## Getting Started
+
+To contribute to the website, clone the repository and follow the setup instructions here:
+
+### Install the required dependencies
+
+We use `bun` as our package manager. Make sure you have it installed. Then run:
+
+```bash
+bun install
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+### Run the development server
 
-## 🚀 Project Structure
+To start the development server, run:
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+bun dev
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+The website will be available at `http://localhost:4321`.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+### Build for production
 
-Any static assets, like images, can be placed in the `public/` directory.
+To build the website for production, run:
 
-## 🧞 Commands
+```bash
+bun run build
+```
 
-All commands are run from the root of the project, from a terminal:
+The built files will be located in the `dist` directory.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `bun install`             | Installs dependencies                            |
-| `bun dev`             | Starts local dev server at `localhost:4321`      |
-| `bun build`           | Build your production site to `./dist/`          |
-| `bun preview`         | Preview your build locally, before deploying     |
-| `bun astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `bun astro -- --help` | Get help using the Astro CLI                     |
+## Contributing
+Contributions are welcome! Please fork the repository and create a pull request with your changes. Make sure to follow the coding style and conventions used in the project.
 
-## 👀 Want to learn more?
+## Our Structure
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+We use the following structure for our project:
+* `src/pages/index.astro` - The main landing page of the website.
+* `src/components/` - Reusable components used throughout the website.
+* `public/` - Static assets such as images and fonts.
+* `src/styles/` - Global styles and theming.
+* `src/content/` - Markdown files for documentation and tutorials.
+* `dist/` - The output directory for the built website.
+* `src/pages/*.svelte` - Svelte pages that respond to routes on the website.

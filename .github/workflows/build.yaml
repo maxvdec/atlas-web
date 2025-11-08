@@ -1,0 +1,16 @@
+name: Build Website
+
+on:
+    push:
+    pull_request:
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v5
+            - uses: oven-sh/setup-bun@v2
+            - name: Install Dependencies
+              run: bun install
+            - name: Build Website
+              run: bun run build
