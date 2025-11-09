@@ -106,7 +106,7 @@
             alt="Atlas Engine Logo"
             class="h-8 w-8 mr-4"
         />
-        <h1 class="text-white font-sans font-bold">Atlas Engine</h1>
+        <a class="text-white font-sans font-bold" href="/">Atlas Engine</a>
     </div>
     <nav class="absolute left-1/2 transform -translate-x-1/2 flex gap-6">
         <div

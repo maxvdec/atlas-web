@@ -4,6 +4,7 @@
     import BentoRow from "./ui/bento/BentoRow.svelte";
     import BentoCard from "./ui/bento/BentoCard.svelte";
     import BlogAnnounce from "./ui/cards/BlogAnnounce.svelte";
+    import Footer from "./navigation/Footer.svelte";
 
     let randomNumbers100 = Array.from({ length: 100 }, () =>
         Math.floor(Math.random() * 100),
@@ -51,15 +52,30 @@
                     for developing amazing games, build worlds and interactive
                     experiences, open to everyone.
 
-                    <div class="relative group mt-5">
-                        <div
-                            class="absolute -inset-1 bg-linear-to-r from-purple-600 via-blue-500 to-cyan-500 rounded-2xl opacity-0 group-hover:opacity-100 blur-lg transition-opacity duration-500 animate-auroraw w-30"
-                        ></div>
-                        <button
-                            class="relative bg-blue-600 text-white font-sans px-4 py-1 rounded-2xl hover:bg-blue-700 transition border border-blue-500 shadow-lg hover:cursor-pointer"
-                            onclick={() => (window.location.href = "/download")}
-                            >Download</button
-                        >
+                    <div class="flex flex-row space-x-4 mt-6">
+                        <div class="relative group mt-5">
+                            <div
+                                class="absolute -inset-1 bg-linear-to-r from-purple-600 via-blue-500 to-cyan-500 rounded-2xl opacity-0 group-hover:opacity-100 blur-lg transition-opacity duration-500 animate-auroraw w-30"
+                            ></div>
+                            <button
+                                class="relative bg-blue-600 text-white font-sans px-4 py-1 rounded-2xl hover:bg-blue-700 transition border border-blue-500 shadow-lg hover:cursor-pointer"
+                                onclick={() =>
+                                    (window.location.href = "/download")}
+                                >Download</button
+                            >
+                        </div>
+                        <div class="relative group mt-5">
+                            <div
+                                class="absolute -inset-1 bg-linear-to-r from-purple-600 via-blue-500 to-cyan-500 rounded-2xl opacity-0 group-hover:opacity-100 blur-lg transition-opacity duration-500 animate-auroraw w-52"
+                            ></div>
+                            <button
+                                class="relative bg-gray-600 text-white font-sans px-4 py-1 rounded-2xl hover:bg-gray-700 transition border border-gray-500 shadow-lg hover:cursor-pointer"
+                                onclick={() =>
+                                    (window.location.href =
+                                        "https://github.com/maxvdec/atlas")}
+                                >Check the repository</button
+                            >
+                        </div>
                     </div>
                 </div>
             </div>
@@ -186,11 +202,136 @@
                 </div>
             </div>
         </div>
+        <div class="flex justify-center">
+            <hr class="-mt-20 w-[1200px] border-gray-500" />
+        </div>
+        <div class="flex justify-center">
+            <div class="h-150 text-white w-[1200px] flex ml-10 flex-col -mt-10">
+                <p class="font-sans font-bold text-3xl mb-10">Install Atlas</p>
+                <BentoLayout>
+                    <div class="aurora-container">
+                        <div class="aurora-backdrop"></div>
+                        <div class="aurora-content">
+                            <BentoRow>
+                                <BentoCard
+                                    class="bg-gray-700/50 backdrop-blur-sm border border-gray-600 rounded-4xl h-50 p-4"
+                                >
+                                    <p class="font-bold font-sans text-2xl">
+                                        Download the installer.
+                                    </p>
+                                    <p class="text-gray-200 mt-2">
+                                        Download the installer from our website
+                                        and execute it to begin the installation
+                                        process.
+                                    </p>
+                                    <div class="relative group mt-8">
+                                        <div
+                                            class="absolute -inset-1 bg-linear-to-r from-purple-600 via-blue-500 to-cyan-500 rounded-2xl opacity-0 group-hover:opacity-100 blur-lg transition-opacity duration-500 animate-auroraw w-30"
+                                        ></div>
+                                        <button
+                                            class="relative bg-blue-600 text-white font-sans px-4 py-1 rounded-2xl hover:bg-blue-700 transition border border-blue-500 shadow-lg hover:cursor-pointer"
+                                            onclick={() =>
+                                                (window.location.href =
+                                                    "/download")}
+                                            >Download</button
+                                        >
+                                    </div>
+                                </BentoCard>
+                                <BentoCard
+                                    class="bg-gray-700/50 backdrop-blur-sm border border-gray-600 rounded-4xl h-50 p-4"
+                                    ><p class="font-bold font-sans text-2xl">
+                                        Create a project.
+                                    </p>
+                                    <p class="text-gray-200 mt-2">
+                                        Use the command line tool to setup a new
+                                        project.
+                                    </p>
+                                    <img
+                                        src="/images/create_example.png"
+                                        alt="Create Example"
+                                        class="-mt-6 h-auto w-full"
+                                    />
+                                </BentoCard>
+                                <BentoCard
+                                    class="bg-gray-700/50 backdrop-blur-sm border border-gray-600 rounded-4xl h-50 p-4"
+                                >
+                                    <p class="font-bold font-sans text-2xl">
+                                        Check out the tutorials.
+                                    </p>
+                                    <p class="text-gray-200 mt-2">
+                                        Explore our comprehensive tutorials to
+                                        get started with Atlas and learn how to
+                                        make the most of its features.
+                                    </p>
+                                    <div class="relative group mt-3">
+                                        <div
+                                            class="absolute -inset-1 bg-linear-to-r from-purple-600 via-blue-500 to-cyan-500 rounded-2xl opacity-0 group-hover:opacity-100 blur-lg transition-opacity duration-500 animate-auroraw w-30"
+                                        ></div>
+                                        <button
+                                            class="relative bg-gray-600 text-white font-sans px-4 py-1 rounded-2xl hover:bg-gray-500 transition border border-gray-500 shadow-lg hover:cursor-pointer"
+                                            onclick={() =>
+                                                (window.location.href =
+                                                    "/learn/first-project")}
+                                            >Go to the tutorials</button
+                                        >
+                                    </div></BentoCard
+                                >
+                            </BentoRow>
+                        </div>
+                    </div>
+                </BentoLayout>
+            </div>
+        </div>
+        <Footer></Footer>
     </div>
 </div>
 
 <style>
     @keyframes aurora {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    .aurora-container {
+        position: relative;
+        isolation: isolate;
+        margin-top: 1.5rem;
+    }
+
+    .aurora-backdrop {
+        position: absolute;
+        inset: -4rem -2rem;
+        background: linear-gradient(
+            120deg,
+            #ff6b6b,
+            #ffde59,
+            #4de98a,
+            #4db7ff,
+            #7b4dff,
+            #ff6b6b
+        );
+        background-size: 400% 400%;
+        filter: blur(80px);
+        opacity: 0.75;
+        animation: auroraGradient 20s ease infinite;
+        pointer-events: none;
+        border-radius: 3rem;
+        z-index: 0;
+    }
+
+    .aurora-content {
+        position: relative;
+        z-index: 1;
+    }
+
+    @keyframes auroraGradient {
         0% {
             background-position: 0% 50%;
         }
