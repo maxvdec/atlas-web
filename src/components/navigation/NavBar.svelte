@@ -98,7 +98,7 @@
 </script>
 
 <header
-    class="w-full h-16 bg-gray-950/20 fixed top-0 left-0 flex items-center justify-between px-8 shadow-md z-40 border border-gray-700 backdrop-blur-sm"
+    class="w-full h-16 bg-gray-950/20 fixed top-0 left-0 grid grid-cols-[auto_1fr_auto] items-center px-8 shadow-md z-40 border border-gray-700 backdrop-blur-sm"
 >
     <div class="flex items-center">
         <img
@@ -108,7 +108,7 @@
         />
         <a class="text-white font-sans font-bold" href="/">Atlas Engine</a>
     </div>
-    <nav class="absolute left-1/2 transform -translate-x-1/2 flex gap-6">
+    <nav class="flex gap-6 justify-self-center">
         <div
             class="relative flex items-center"
             role="button"

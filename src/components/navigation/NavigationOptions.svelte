@@ -8,7 +8,7 @@
 
 <div class="absolute top-full left-0 pt-3" transition:blur={{ duration: 200 }}>
     <div
-        class="min-w-[480px] bg-gray-900/80 border border-gray-700 rounded-2xl shadow-2xl px-6 py-5 backdrop-blur-xl"
+        class="glass-panel min-w-[480px] border border-white/10 rounded-2xl shadow-2xl px-6 py-5"
     >
         <div class="grid gap-x-12 gap-y-6 sm:grid-cols-2">
             {#each options?.groups ?? [] as group, index}
@@ -51,3 +51,11 @@
         </div>
     </div>
 </div>
+
+<style>
+    .glass-panel {
+        background: rgba(15, 23, 42, 0.9);
+        backdrop-filter: blur(22px) saturate(120%);
+        -webkit-backdrop-filter: blur(22px) saturate(120%);
+    }
+</style>
