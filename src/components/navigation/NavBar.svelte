@@ -19,11 +19,6 @@
                         description: "Learn about the Atlas Engine",
                         link: "/overview/atlas",
                     },
-                    {
-                        title: "Features",
-                        description: "Discover the features of Atlas Engine",
-                        link: "/overview/features",
-                    },
                 ],
             },
             {

@@ -1,10 +1,10 @@
 <script lang="ts">
-    let { className = "", children } = $props();
+    let { className = "", spacing = "1rem", children } = $props();
 </script>
 
 <div
     class={className}
-    style="display: flex; flex-direction: column; gap: 1rem;"
+    style={`display: flex; flex-direction: column; gap: ${spacing};`}
 >
     {@render children()}
 </div>

@@ -1,4 +1,5 @@
-<script lang="ts"></script>
+<script lang="ts">
+</script>
 
 <footer class="flex flex-col justify-center">
     <hr class="border-gray-700" />
@@ -20,9 +21,6 @@
                     <a
                         class="mt-4 font-sans text-gray-200"
                         href="/overview/atlas">Atlas</a
-                    >
-                    <a class="font-sans text-gray-200" href="/overview/features"
-                        >Features</a
                     >
                     <a class="font-sans text-gray-200" href="/overview/roadmap"
                         >Roadmap</a
