@@ -71,7 +71,9 @@
                     <a class="font-sans text-gray-200" href="/documentation"
                         >Documentation</a
                     >
-                    <a class="font-sans text-gray-200" href="/dox-documentation"
+                    <a
+                        class="font-sans text-gray-200"
+                        href="https://maxvdec.github.io/atlas"
                         >Doxygen Documentation</a
                     >
                     <a class="font-sans text-gray-200" href="/news">News</a>

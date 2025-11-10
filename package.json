@@ -13,11 +13,13 @@
         "@lucide/svelte": "^0.553.0",
         "@tailwindcss/vite": "^4.1.17",
         "astro": "^5.15.4",
+        "markdown-it": "^14.1.0",
         "svelte": "^5.43.4",
         "tailwindcss": "^4.1.17",
         "typescript": "^5.9.3"
     },
     "devDependencies": {
+        "@types/markdown-it": "^14.0.6",
         "prettier": "^3.6.2",
         "prettier-plugin-astro": "^0.14.1",
         "prettier-plugin-svelte": "^3.4.0"

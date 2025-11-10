@@ -8,7 +8,7 @@
         title: "Alpha 5 Roadmap",
         coverImage: "/images/sponza3.png",
         description:
-            "The Alpha 5 release focuses on enhancing rendering speed by introducing Opal, our in-house rendering backend that uses Vulkan instead of OpenGL. We are also investing in Jolt Physics, the website, documentation, and Hana's implementation for additional backends.",
+            "The Alpha 5 release focuses on enhancing rendering speed by introducing Opal, our in-house rendering backend that uses Vulkan instead of OpenGL. We are also investing in Jolt Physics, the website, documentation, and the Slang shader language integration.",
         features: [
             {
                 title: "Create Opal for Core Rendering",
@@ -47,20 +47,8 @@
                 status: "planned",
             },
             {
-                title: "Create the Hana Shader Language",
-                description: `Develop Hana, a custom shader language designed to simplify shader creation and
-                    enhance performance within Atlas Engine.`,
-                status: "planned",
-            },
-            {
-                title: "Implement a Syntax Highlighting Plugin for Hana",
-                description: `Create a syntax highlighting plugin for popular code editors to support the Hana shader language,
-                    improving the development experience for shader programmers.`,
-                status: "planned",
-            },
-            {
-                title: "Move all shaders to Hana",
-                description: `Transition all existing shaders in Atlas Engine to the Hana shader language,
+                title: "Move all shaders to Slang",
+                description: `Transition all existing shaders in Atlas Engine to the Slang shader language,
                     ensuring consistency and leveraging the benefits of the new language.`,
                 status: "planned",
             },

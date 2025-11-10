@@ -215,6 +215,7 @@
                             <BentoRow>
                                 <BentoCard
                                     class="bg-gray-700/50 backdrop-blur-sm border border-gray-600 rounded-4xl h-50 p-4"
+                                    heightOffset={-200}
                                 >
                                     <p class="font-bold font-sans text-2xl">
                                         Download the installer.
@@ -239,6 +240,7 @@
                                 </BentoCard>
                                 <BentoCard
                                     class="bg-gray-700/50 backdrop-blur-sm border border-gray-600 rounded-4xl h-50 p-4"
+                                    heightOffset={-200}
                                     ><p class="font-bold font-sans text-2xl">
                                         Create a project.
                                     </p>
@@ -254,6 +256,7 @@
                                 </BentoCard>
                                 <BentoCard
                                     class="bg-gray-700/50 backdrop-blur-sm border border-gray-600 rounded-4xl h-50 p-4"
+                                    heightOffset={-200}
                                 >
                                     <p class="font-bold font-sans text-2xl">
                                         Check out the tutorials.

@@ -13,7 +13,7 @@
             title: "Alpha 5 Roadmap",
             roadmapURL: "/roadmap/alpha5",
             description:
-                "Explore the Alpha 5 roadmap, focusing on enhancing rendering speed with Opal, integrating Jolt Physics, launching a new website, modernizing documentation, and developing the Hana shader language.",
+                "Explore the Alpha 5 roadmap, focusing on enhancing rendering speed with Opal, integrating Jolt Physics, launching a new website, modernizing documentation and integrating the Slang shader language",
         },
     ];
 </script>

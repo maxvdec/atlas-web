@@ -14,9 +14,9 @@
             image: "/images/render_sample.png",
         },
         {
-            title: "Hana Shading Language",
+            title: "Other Libraries",
             description:
-                "Improve the Hana toolchain, author new shader samples, and enhance IDE integrations.",
+                "Contribute to other libraries such as Bezel, Opal or Finewave that complement Atlas Engine.",
             image: "/images/sponza2.png",
         },
         {
@@ -199,23 +199,23 @@
                         </h2>
                         <ul class="mt-5 space-y-3 text-gray-300 font-sans">
                             <li>
-                                ✅ Run the relevant engine samples or unit tests
+                                Run the relevant engine samples or unit tests
                                 before submitting.
                             </li>
                             <li>
-                                ✅ Document new APIs, configuration flags, or
+                                Document new APIs, configuration flags, or
                                 shader parameters.
                             </li>
                             <li>
-                                ✅ Include screenshots or recordings when work
+                                Include screenshots or recordings when work
                                 affects visuals or UI.
                             </li>
                             <li>
-                                ✅ Keep commits scoped and reference the issue
-                                or roadmap item.
+                                Keep commits scoped and reference the issue or
+                                roadmap item.
                             </li>
                             <li>
-                                ✅ Tag reviewers based on the subsystem touched
+                                Tag reviewers based on the subsystem touched
                                 (rendering, physics, tooling, docs).
                             </li>
                         </ul>

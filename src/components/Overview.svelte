@@ -128,34 +128,6 @@
                     </div>
                 </BentoCard>
             </BentoRow>
-            <BentoRow>
-                <BentoCard>
-                    <div class="flex flex-row p-3">
-                        <div class="w-[50%]">
-                            <p class="font-sans text-3xl font-bold text-white">
-                                Shading with Hana
-                            </p>
-                            <p class="font-sans mt-5 text-white">
-                                We have developed Hana, our custom shading
-                                language that is modern and fast to use, besides
-                                it can compile to any of Vulkan or OpenGL
-                                shading languages, giving it great flexibility
-                                at the time of writing amazing shaders. These
-                                can be integrated in the engine easily and
-                                efficiently, allowing to generate visual
-                                experiences and effects with great performance.
-                            </p>
-                        </div>
-                        <div class="ml-auto w-[50%] overflow-hidden">
-                            <img
-                                src="/images/sponza2.png"
-                                alt="Render Sample"
-                                class="w-full h-full object-cover block p-0"
-                            />
-                        </div>
-                    </div>
-                </BentoCard>
-            </BentoRow>
         </BentoLayout>
     </div>
     <Footer></Footer>
