@@ -17,12 +17,12 @@
             </div>
             <div class="flex flex-row mt-6 gap-7">
                 <div class="flex-col flex">
-                    <p class="font-sans font-bold">Overview</p>
+                    <p class="font-sans font-bold text-white">Overview</p>
                     <a
                         class="mt-4 font-sans text-gray-200"
                         href="/overview/atlas">Atlas</a
                     >
-                    <a class="font-sans text-gray-200" href="/overview/roadmap"
+                    <a class="font-sans text-gray-200" href="/roadmap/latest"
                         >Roadmap</a
                     >
                     <a
@@ -38,7 +38,7 @@
                     >
                 </div>
                 <div class="flex-col flex">
-                    <p class="font-sans font-bold">Learn</p>
+                    <p class="font-sans font-bold text-white">Learn</p>
                     <a
                         class="mt-4 font-sans text-gray-200"
                         href="/learn/installation">Installation</a
@@ -61,7 +61,7 @@
                     >
                 </div>
                 <div class="flex-col flex">
-                    <p class="font-sans font-bold">Others</p>
+                    <p class="font-sans font-bold text-white">Others</p>
                     <a class="mt-4 font-sans text-gray-200" href="/">Landing</a>
                     <a
                         class="font-sans text-gray-200"

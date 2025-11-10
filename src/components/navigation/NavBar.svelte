@@ -27,7 +27,7 @@
                     {
                         title: "Roadmap",
                         description: "See the future plans for Atlas Engine",
-                        link: "/overview/roadmap",
+                        link: "/roadmap/latest",
                     },
                     {
                         title: "Contributing",
