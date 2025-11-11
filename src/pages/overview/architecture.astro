@@ -1,0 +1,19 @@
+---
+import '../../styles/global.css'
+import ArchitectureSvelte from '../../components/Architecture.svelte';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/png" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>The Architecture - Atlas Engine</title>
+	</head>
+	<body class="bg-gray-950">
+		<div>
+			<ArchitectureSvelte client:load />
+		</div>
+	</body>
+</html>
