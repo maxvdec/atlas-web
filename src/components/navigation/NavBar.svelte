@@ -156,6 +156,9 @@
             class="absolute -inset-1 bg-linear-to-r from-purple-600 via-blue-500 to-cyan-500 rounded-2xl opacity-0 group-hover:opacity-100 blur-lg transition-opacity duration-500 animate-aurora"
         ></div>
         <button
+            onclick={() => {
+                window.location.href = "/download";
+            }}
             class="relative bg-blue-600 text-white font-sans px-4 py-1 rounded-2xl hover:bg-blue-700 transition border border-blue-500 shadow-lg hover:cursor-pointer"
             >Download</button
         >

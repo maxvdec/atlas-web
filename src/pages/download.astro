@@ -1,0 +1,19 @@
+---
+import '../styles/global.css'
+import DownloadPage from '../components/Download.svelte';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/png" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Download the Engine - Atlas Engine</title>
+	</head>
+	<body class="bg-gray-950">
+		<div>
+			<DownloadPage client:load />
+		</div>
+	</body>
+</html>
