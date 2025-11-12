@@ -1,7 +1,7 @@
 ---
 import '../../styles/global.css'
 import MarkdownExtract from '../../components/MarkdownExtract.svelte';
-import content from '../../content/installation.md?raw';
+import content from '../../content/first-project.md?raw';
 ---
 
 <html lang="en">
@@ -10,11 +10,11 @@ import content from '../../content/installation.md?raw';
 		<link rel="icon" type="image/png" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Installation - Atlas Engine</title>
+		<title>First Project - Atlas Engine</title>
 	</head>
 	<body class="bg-gray-950">
 		<div>
-			<MarkdownExtract title="Install Atlas Engine" description="Check how to install the Atlas Engine" image="/images/sponza4.png" markdown={content} client:load />
+			<MarkdownExtract title="Your First Project" description="Start making incredible games with Atlas" image="/images/for_lib/hydra.png" markdown={content} client:load />
 		</div>
 	</body>
 </html>

@@ -7,6 +7,7 @@
         heightOffset = 0,
         autoHeight = false,
         reveal = { x: 0, y: 32 },
+        disableReveal = false,
         class: className = "",
         children,
         ...otherProps
@@ -16,7 +17,7 @@
 <div
     class={`${className || "from-gray-800 to-gray-900 bg-linear-to-b border border-gray-700 rounded-4xl shadow-md p-6 h-100 overflow-hidden"}`}
     style={`width: calc(100% + ${offset}px); height: ${autoHeight ? "auto" : `calc(25rem + ${heightOffset}px)`};`}
-    use:scrollReveal={{ ...reveal }}
+    use:scrollReveal={!disableReveal ? { ...reveal } : undefined}
     {...otherProps}
 >
     {@render children()}
