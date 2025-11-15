@@ -1,38 +1,50 @@
 <script lang="ts">
+    import { onMount } from "svelte";
     import NavBar from "./navigation/NavBar.svelte";
     import BentoLayout from "./ui/bento/BentoLayout.svelte";
     import BentoRow from "./ui/bento/BentoRow.svelte";
     import BentoCard from "./ui/bento/BentoCard.svelte";
     import BlogAnnounce from "./ui/cards/BlogAnnounce.svelte";
     import Footer from "./navigation/Footer.svelte";
+    import type { BlogPostRaw } from "../scripts/blog";
+    import {
+        NEWS_JSON_ENDPOINT,
+        getLatestNews,
+        mapBlogPostRawToNewsItem,
+        type NewsItem,
+    } from "../scripts/news";
 
     let randomNumbers100 = Array.from({ length: 100 }, () =>
         Math.floor(Math.random() * 100),
     );
 
-    let blogPosts = [
-        {
-            title: "Introducing Atlas 1.0",
-            description:
-                "We are excited to announce the release of Atlas 1.0, the first stable version of our game engine.",
-            imageUrl: "/images/render_sample.png",
-            link: "/blog/introducing-atlas-1-0",
-        },
-        {
-            title: "Getting Started with Atlas",
-            description:
-                "Learn how to set up your development environment and create your first project with Atlas.",
-            imageUrl: "/images/blog/getting_started.png",
-            link: "/blog/getting-started-with-atlas",
-        },
-        {
-            title: "Modular Architecture in Atlas",
-            description:
-                "Discover how Atlas's modular architecture allows for flexibility and customization in game development.",
-            imageUrl: "/images/blog/modular_architecture.png",
-            link: "/blog/modular-architecture-in-atlas",
-        },
-    ];
+    let latestNews: NewsItem[] = [];
+    let newsLoading = true;
+    let newsError: string | null = null;
+
+    const loadLatestNews = async () => {
+        newsLoading = true;
+        newsError = null;
+
+        try {
+            const response = await fetch(NEWS_JSON_ENDPOINT);
+            if (!response.ok) {
+                throw new Error("Unable to load the latest news.");
+            }
+
+            const rawItems = (await response.json()) as BlogPostRaw[];
+            const newsItems = rawItems.map(mapBlogPostRawToNewsItem);
+            latestNews = getLatestNews(newsItems, 3);
+        } catch (error) {
+            console.error("Failed to load news", error);
+            newsError =
+                "News are unavailable right now. Please try again later.";
+        } finally {
+            newsLoading = false;
+        }
+    };
+
+    onMount(loadLatestNews);
 </script>
 
 <div>
@@ -194,12 +206,28 @@
         </div>
         <div class="flex justify-center">
             <div class="h-150 text-white w-[1200px] flex mt-10 ml-10 flex-col">
-                <p class="font-sans font-bold text-3xl">News</p>
-                <div class="flex flex-row mt-10 space-x-6 overflow-x-auto">
-                    {#each blogPosts as post}
-                        <BlogAnnounce blogPostRaw={post} />
-                    {/each}
+                <div class="flex items-center justify-between">
+                    <p class="font-sans font-bold text-3xl">News</p>
+                    <a
+                        class="text-sm text-blue-400 hover:text-blue-300 underline"
+                        href="/news">View all</a
+                    >
                 </div>
+                {#if newsLoading}
+                    <p class="mt-10 text-gray-400">
+                        Loading the latest news...
+                    </p>
+                {:else if newsError}
+                    <p class="mt-10 text-red-400">{newsError}</p>
+                {:else if latestNews.length === 0}
+                    <p class="mt-10 text-gray-400">No news available yet.</p>
+                {:else}
+                    <div class="flex flex-row mt-10 gap-6 overflow-x-auto pb-2">
+                        {#each latestNews as post}
+                            <BlogAnnounce blogPostRaw={post} />
+                        {/each}
+                    </div>
+                {/if}
             </div>
         </div>
         <div class="flex justify-center">

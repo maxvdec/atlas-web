@@ -5,3 +5,11 @@ export interface BlogPost {
     description: string;
     imageUrl?: string;
 }
+
+export interface BlogPostRaw {
+    name: string;
+    desc: string;
+    image: string;
+    markdown: string;
+    date: string;
+}
