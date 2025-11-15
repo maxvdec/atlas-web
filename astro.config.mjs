@@ -1,18 +1,21 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 
-import svelte from '@astrojs/svelte';
+import svelte from "@astrojs/svelte";
 
-import tailwindcss from '@tailwindcss/vite';
+import tailwindcss from "@tailwindcss/vite";
+import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [svelte()],
-  redirects: {
-    '/roadmap/latest': '/roadmap/alpha5'
-  },
+    integrations: [svelte(), sitemap()],
+    redirects: {
+        "/roadmap/latest": "/roadmap/alpha5",
+    },
 
-  vite: {
-    plugins: [tailwindcss()]
-  }
+    vite: {
+        plugins: [tailwindcss()],
+    },
+    site: "https://atlasengine.org",
 });
+

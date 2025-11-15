@@ -2,13 +2,16 @@
     let { rawOptions = {} } = $props();
     import type { NavigationOption } from "../../scripts/utils";
     import { blur } from "svelte/transition";
-
     let options = rawOptions as NavigationOption;
 </script>
 
-<div class="absolute top-full left-0 pt-3" transition:blur={{ duration: 200 }}>
+<div
+    class="absolute top-full left-0 pt-3 z-50"
+    transition:blur={{ duration: 200 }}
+>
     <div
-        class="glass-panel min-w-[480px] border border-white/10 rounded-2xl shadow-2xl px-6 py-5"
+        class="min-w-[480px] border border-white/10 rounded-2xl shadow-2xl px-6 py-5"
+        style="background: rgba(15, 23, 42, 0.9); backdrop-filter: blur(22px) saturate(120%); -webkit-backdrop-filter: blur(22px) saturate(120%);"
     >
         <div class="grid gap-x-12 gap-y-6 sm:grid-cols-2">
             {#each options?.groups ?? [] as group, index}
@@ -51,11 +54,3 @@
         </div>
     </div>
 </div>
-
-<style>
-    .glass-panel {
-        background: rgba(15, 23, 42, 0.9);
-        backdrop-filter: blur(22px) saturate(120%);
-        -webkit-backdrop-filter: blur(22px) saturate(120%);
-    }
-</style>

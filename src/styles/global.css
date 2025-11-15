@@ -5,3 +5,41 @@
 html {
     font-family: "Inter", sans-serif;
 }
+
+@layer components {
+    .atlas-container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 1200px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    @media (min-width: 640px) {
+        .atlas-container {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+    }
+
+    .atlas-section {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+}
+
+@layer utilities {
+    @media (max-width: 1024px) {
+        .w-\[1200px\],
+        .max-w-\[1200px\] {
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+
+        .h-150 {
+            height: auto !important;
+        }
+    }
+}
