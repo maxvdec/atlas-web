@@ -72,16 +72,6 @@
                 groupTitle: "Tutorials",
                 pages: [
                     {
-                        title: "Basic Tutorial",
-                        description: "Learn the basics of Atlas Engine",
-                        link: "/learn/basic-tutorial",
-                    },
-                    {
-                        title: "Advanced Tutorial",
-                        description: "Master advanced features of Atlas Engine",
-                        link: "/learn/advanced-tutorial",
-                    },
-                    {
                         title: "Other Tutorials",
                         description: "Explore more tutorials for Atlas Engine",
                         link: "/learn/other-tutorials",
