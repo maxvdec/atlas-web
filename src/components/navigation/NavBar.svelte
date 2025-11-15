@@ -136,8 +136,10 @@
         </div>
         <a class="text-gray-200 font-sans" href="/about">About</a>
         <a class="text-gray-200 font-sans" href="/news">News</a>
-        <a class="text-gray-200 font-sans" href="/documentation"
-            >Documentation</a
+        <a
+            class="text-gray-200 font-sans"
+            href="https://docs.atlasengine.org"
+            target="_blank">Documentation</a
         >
     </nav>
     <div class="relative group">

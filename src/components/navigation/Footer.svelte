@@ -68,13 +68,10 @@
                         href="https://github.com/maxvdec/atlas">Repository</a
                     >
                     <a class="font-sans text-gray-200" href="/about">About</a>
-                    <a class="font-sans text-gray-200" href="/documentation"
-                        >Documentation</a
-                    >
                     <a
                         class="font-sans text-gray-200"
-                        href="https://maxvdec.github.io/atlas"
-                        >Doxygen Documentation</a
+                        href="https://docs.atlasengine.org"
+                        target="_blank">Documentation</a
                     >
                     <a class="font-sans text-gray-200" href="/news">News</a>
                 </div>
