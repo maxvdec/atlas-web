@@ -134,7 +134,6 @@
                 <NavigationOptions rawOptions={learnGroup}></NavigationOptions>
             {/if}
         </div>
-        <a class="text-gray-200 font-sans" href="/community">Community</a>
         <a class="text-gray-200 font-sans" href="/about">About</a>
         <a class="text-gray-200 font-sans" href="/news">News</a>
         <a class="text-gray-200 font-sans" href="/documentation"
