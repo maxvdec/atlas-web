@@ -14,12 +14,12 @@
         description="Meet the actors that make Atlas Engine a powerful and flexible tool for developers."
         imageSrc="/images/sponza3.png"
     ></Introduction>
-    <div class="w-[1200px] flex flex-col mx-auto my-10">
+    <div class="atlas-container flex flex-col my-10">
         <BentoLayout spacing="3rem">
             <BentoRow>
                 <BentoCard>
-                    <div class="flex flex-row p-3">
-                        <div class="w-[50%]">
+                    <div class="flex flex-col gap-6 p-3 lg:flex-row">
+                        <div class="w-full lg:w-1/2">
                             <p class="font-sans text-3xl font-bold text-white">
                                 Atlas
                             </p>
@@ -32,7 +32,7 @@
                                 management, and scene management.
                             </p>
                         </div>
-                        <div class="ml-auto w-[50%] overflow-hidden">
+                        <div class="w-full lg:w-1/2 overflow-hidden lg:ml-auto">
                             <img
                                 src="/images/sponza4.png"
                                 alt="Render Sample"
@@ -44,15 +44,15 @@
             </BentoRow>
             <BentoRow>
                 <BentoCard>
-                    <div class="flex flex-row p-3">
-                        <div class=" w-[50%] overflow-hidden">
+                    <div class="flex flex-col gap-6 p-3 lg:flex-row">
+                        <div class="w-full lg:w-1/2 overflow-hidden">
                             <img
                                 src="/images/for_lib/aurora.png"
                                 alt="Render Sample"
                                 class="w-full h-full object-cover block"
                             />
                         </div>
-                        <div class="w-[50%] ml-10">
+                        <div class="w-full lg:w-1/2 lg:ml-10">
                             <p class="font-sans text-3xl font-bold text-white">
                                 Aurora
                             </p>
@@ -71,8 +71,8 @@
             </BentoRow>
             <BentoRow>
                 <BentoCard>
-                    <div class="flex flex-row p-3">
-                        <div class="w-[50%]">
+                    <div class="flex flex-col gap-6 p-3 lg:flex-row">
+                        <div class="w-full lg:w-1/2">
                             <p class="font-sans text-3xl font-bold text-white">
                                 Bezel
                             </p>
@@ -90,7 +90,7 @@
                                 interactions within the engine.
                             </p>
                         </div>
-                        <div class="ml-auto w-[50%] overflow-hidden">
+                        <div class="w-full lg:w-1/2 overflow-hidden lg:ml-auto">
                             <img
                                 src="/images/render_sample.png"
                                 alt="Render Sample"
@@ -102,15 +102,15 @@
             </BentoRow>
             <BentoRow>
                 <BentoCard>
-                    <div class="flex flex-row p-3">
-                        <div class=" w-[50%] overflow-hidden">
+                    <div class="flex flex-col gap-6 p-3 lg:flex-row">
+                        <div class="w-full lg:w-1/2 overflow-hidden">
                             <img
                                 src="/images/sunset.png"
                                 alt="Render Sample"
                                 class="w-full h-full object-cover block"
                             />
                         </div>
-                        <div class="w-[50%] ml-10">
+                        <div class="w-full lg:w-1/2 lg:ml-10">
                             <p class="font-sans text-3xl font-bold text-white">
                                 Finewave
                             </p>
@@ -130,8 +130,8 @@
             </BentoRow>
             <BentoRow>
                 <BentoCard>
-                    <div class="flex flex-row p-3">
-                        <div class="w-[50%]">
+                    <div class="flex flex-col gap-6 p-3 lg:flex-row">
+                        <div class="w-full lg:w-1/2">
                             <p class="font-sans text-3xl font-bold text-white">
                                 Hydra
                             </p>
@@ -145,7 +145,7 @@
                                 maintaining smooth frame rates.
                             </p>
                         </div>
-                        <div class="ml-auto w-[50%] overflow-hidden">
+                        <div class="w-full lg:w-1/2 overflow-hidden lg:ml-auto">
                             <img
                                 src="/images/for_lib/hydra.png"
                                 alt="Render Sample"
@@ -157,15 +157,15 @@
             </BentoRow>
             <BentoRow>
                 <BentoCard>
-                    <div class="flex flex-row p-3">
-                        <div class=" w-[50%] overflow-hidden">
+                    <div class="flex flex-col gap-6 p-3 lg:flex-row">
+                        <div class="w-full lg:w-1/2 overflow-hidden">
                             <img
                                 src="/images/sponza2.png"
                                 alt="Render Sample"
                                 class="w-full h-full object-cover block"
                             />
                         </div>
-                        <div class="w-[50%] ml-10">
+                        <div class="w-full lg:w-1/2 lg:ml-10">
                             <p class="font-sans text-3xl font-bold text-white">
                                 Opal
                             </p>

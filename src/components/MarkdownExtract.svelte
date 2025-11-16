@@ -8,7 +8,6 @@
     import javascript from "highlight.js/lib/languages/javascript";
     import typescript from "highlight.js/lib/languages/typescript";
     import toml from "highlight.js/lib/languages/ini";
-    import mermaid from "mermaid";
     import Introduction from "./ui/Introduction.svelte";
     import BentoLayout from "./ui/bento/BentoLayout.svelte";
     import BentoRow from "./ui/bento/BentoRow.svelte";
@@ -75,13 +74,45 @@
         highlight,
     });
 
-    if (typeof window !== "undefined") {
-        mermaid.initialize({
-            startOnLoad: false,
-            securityLevel: "loose",
-            theme: "dark",
-        });
-    }
+    type MermaidRuntime =
+        typeof import("mermaid/dist/mermaid.esm.min.mjs").default;
+
+    let mermaidModule: MermaidRuntime | null = null;
+    let mermaidPromise: Promise<MermaidRuntime | null> | null = null;
+
+    const loadMermaid = async () => {
+        if (mermaidModule || typeof window === "undefined") {
+            return mermaidModule;
+        }
+
+        if (!mermaidPromise) {
+            mermaidPromise = import("mermaid/dist/mermaid.esm.min.mjs")
+                .then(({ default: mermaid }) => {
+                    mermaid.initialize({
+                        startOnLoad: false,
+                        securityLevel: "loose",
+                        theme: "dark",
+                        themeVariables: {
+                            fontSize: "16px",
+                            fontFamily: "Inter, sans-serif",
+                            primaryColor: "#0f172a",
+                            lineColor: "#94a3b8",
+                            primaryBorderColor: "#94a3b8",
+                            textColor: "#e2e8f0",
+                        },
+                    });
+                    mermaidModule = mermaid;
+                    return mermaidModule;
+                })
+                .catch((error) => {
+                    console.error("Failed to load mermaid", error);
+                    mermaidPromise = null;
+                    return null;
+                });
+        }
+
+        return mermaidPromise;
+    };
 
     let renderedMarkdown = $state<string>("");
     let loading = $state<boolean>(false);
@@ -115,6 +146,12 @@
                     return;
                 }
 
+                const mermaidApi = await loadMermaid();
+                if (!mermaidApi) {
+                    diagram.dataset.mermaid = "error";
+                    return;
+                }
+
                 const code = diagram.textContent?.trim() ?? "";
                 if (!code) {
                     return;
@@ -123,7 +160,7 @@
                 const diagramId = `mermaid-${diagramCounter++}`;
 
                 try {
-                    const rendered = await mermaid.render(diagramId, code);
+                    const rendered = await mermaidApi.render(diagramId, code);
                     diagram.innerHTML = rendered.svg;
                     diagram.dataset.mermaid = "processed";
                 } catch (error) {
@@ -438,12 +475,31 @@
         min-height: 120px;
         width: 100%;
         box-shadow: 0 10px 30px -15px rgba(15, 23, 42, 0.8);
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
     }
 
     :global(.markdown-body .mermaid svg) {
         width: 100%;
         height: auto;
         display: block;
+        min-width: 420px;
+    }
+
+    :global(.markdown-body .mermaid svg text) {
+        font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+    }
+
+    @media (max-width: 640px) {
+        :global(.markdown-body .mermaid) {
+            padding: 1.25rem;
+            min-height: 160px;
+        }
+
+        :global(.markdown-body .mermaid svg) {
+            min-width: 520px;
+        }
     }
 
     :global(.mermaid-error) {

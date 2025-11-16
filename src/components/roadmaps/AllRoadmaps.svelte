@@ -27,20 +27,22 @@
         description="Explore the future plans and upcoming features of the Atlas Engine through our detailed roadmaps."
     ></Introduction>
 
-    <div class="w-full flex justify-center my-10">
-        <BentoLayout className="w-[700px]">
+    <div class="w-full flex justify-center my-10 px-4">
+        <BentoLayout className="atlas-container max-w-[720px]">
             {#each roadmaps as roadmap}
                 <BentoRow>
                     <BentoCard autoHeight={true}>
-                        <a
-                            class="text-2xl font-bold text-white"
-                            href={roadmap.roadmapURL}
-                        >
-                            {roadmap.title}
-                        </a>
-                        <p class="mt-1 text-white">
-                            {roadmap.description}
-                        </p>
+                        <div class="flex flex-col gap-3 text-white">
+                            <a
+                                class="text-2xl font-bold"
+                                href={roadmap.roadmapURL}
+                            >
+                                {roadmap.title}
+                            </a>
+                            <p class="text-gray-200 leading-relaxed">
+                                {roadmap.description}
+                            </p>
+                        </div>
                     </BentoCard>
                 </BentoRow>
             {/each}

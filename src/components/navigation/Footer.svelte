@@ -3,9 +3,11 @@
 
 <footer class="flex flex-col justify-center">
     <hr class="border-gray-700" />
-    <div class="flex justify-center my-4">
-        <div class="w-[1200px]">
-            <div class="flex flex-row items-center mt-5">
+    <div class="flex justify-center my-4 px-4">
+        <div class="atlas-container">
+            <div
+                class="flex flex-col items-start gap-4 mt-5 sm:flex-row sm:items-center"
+            >
                 <img
                     src="/logo/logo1024.png"
                     alt="Atlas Engine Logo"
@@ -15,7 +17,7 @@
                     >Atlas Engine</a
                 >
             </div>
-            <div class="flex flex-row mt-6 gap-7">
+            <div class="flex flex-col mt-6 gap-7 md:flex-row">
                 <div class="flex-col flex">
                     <p class="font-sans font-bold text-white">Overview</p>
                     <a
@@ -76,7 +78,9 @@
                     <a class="font-sans text-gray-200" href="/news">News</a>
                 </div>
             </div>
-            <div class="w-full mt-5 flex items-center justify-center mb-5">
+            <div
+                class="w-full mt-5 flex items-center justify-center mb-5 px-2 text-center"
+            >
                 <p class="text-gray-500 font-sans text-sm">
                     &copy; 2025 Atlas Engine. Designed and built by the Atlas
                     Community.

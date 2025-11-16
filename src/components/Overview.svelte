@@ -14,12 +14,12 @@
         description="Discover the power of our platform, tailored to your needs."
         imageSrc="/images/sponza.png"
     ></Introduction>
-    <div class="w-[1200px] flex flex-col mx-auto my-10">
+    <div class="atlas-container flex flex-col my-10">
         <BentoLayout spacing="3rem">
             <BentoRow>
                 <BentoCard>
-                    <div class="flex flex-row p-3">
-                        <div class="w-[50%]">
+                    <div class="flex flex-col gap-6 p-3 lg:flex-row">
+                        <div class="w-full lg:w-1/2">
                             <p class="font-sans text-3xl font-bold text-white">
                                 Open Source
                             </p>
@@ -33,7 +33,7 @@
                                 restrictions like other engines.
                             </p>
                         </div>
-                        <div class="ml-auto w-[50%] overflow-hidden">
+                        <div class="w-full lg:w-1/2 overflow-hidden lg:ml-auto">
                             <img
                                 src="/images/repo.png"
                                 alt="Render Sample"
@@ -45,15 +45,15 @@
             </BentoRow>
             <BentoRow>
                 <BentoCard>
-                    <div class="flex flex-row p-3">
-                        <div class=" w-[50%] overflow-hidden">
+                    <div class="flex flex-col gap-6 p-3 lg:flex-row">
+                        <div class="w-full lg:w-1/2 overflow-hidden">
                             <img
                                 src="/images/sponza.png"
                                 alt="Render Sample"
                                 class="w-full h-full object-cover block"
                             />
                         </div>
-                        <div class="w-[50%] ml-10">
+                        <div class="w-full lg:w-1/2 lg:ml-10">
                             <p class="font-sans text-3xl font-bold text-white">
                                 Speed
                             </p>
@@ -73,8 +73,8 @@
             </BentoRow>
             <BentoRow>
                 <BentoCard>
-                    <div class="flex flex-row p-3">
-                        <div class="w-[50%]">
+                    <div class="flex flex-col gap-6 p-3 lg:flex-row">
+                        <div class="w-full lg:w-1/2">
                             <p class="font-sans text-3xl font-bold text-white">
                                 Our Renderer
                             </p>
@@ -89,7 +89,7 @@
                                 and optimize it for their specific needs.
                             </p>
                         </div>
-                        <div class="ml-auto w-[50%] overflow-hidden">
+                        <div class="w-full lg:w-1/2 overflow-hidden lg:ml-auto">
                             <img
                                 src="/images/render_sample.png"
                                 alt="Render Sample"
@@ -101,15 +101,15 @@
             </BentoRow>
             <BentoRow>
                 <BentoCard>
-                    <div class="flex flex-row p-3">
-                        <div class=" w-[50%] overflow-hidden">
+                    <div class="flex flex-col gap-6 p-3 lg:flex-row">
+                        <div class="w-full lg:w-1/2 overflow-hidden">
                             <img
                                 src="/images/sunset.png"
                                 alt="Render Sample"
                                 class="w-full h-full object-cover block"
                             />
                         </div>
-                        <div class="w-[50%] ml-10">
+                        <div class="w-full lg:w-1/2 lg:ml-10">
                             <p class="font-sans text-3xl font-bold text-white">
                                 Modular
                             </p>

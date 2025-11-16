@@ -15,10 +15,10 @@
         description={roadmap.description}
     ></Introduction>
 
-    <div class="mt-10 flex items-center flex-col text-white gap-4 mb-10">
+    <div class="mt-10 flex flex-col items-center gap-4 text-white mb-10 px-4">
         {#each roadmap.features as feature}
             <div
-                class="bg-gray-800 p-5 rounded-2xl border-gray-600 border w-[800px] flex flex-col"
+                class="bg-gray-800/80 p-5 rounded-2xl border border-gray-600 shadow-lg w-full max-w-[900px] flex flex-col"
             >
                 <div class="flex flex-row gap-2">
                     <p class="font-bold">{feature.title}</p>
@@ -49,7 +49,9 @@
         {/each}
     </div>
 
-    <div class="w-full flex justify-center mb-10 flex-col items-center">
+    <div
+        class="w-full flex justify-center mb-10 flex-col items-center px-4 text-center gap-4"
+    >
         <p class="font-bold text-white text-2xl">
             Checking for roadmaps of old versions?
         </p>
