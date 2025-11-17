@@ -32,7 +32,7 @@
                 title: "New Website Launch",
                 description: `Create and launch a new website for Atlas Engine,
                     providing better access to resources, documentation, and community engagement.`,
-                status: "planned",
+                status: "finished",
             },
             {
                 title: "Modernize Documentation",
@@ -44,7 +44,7 @@
                 title: "Add examples and tutorials for the Engine",
                 description: `Develop comprehensive examples and tutorials to help users understand and utilize the 
                 features of Atlas Engine effectively.`,
-                status: "planned",
+                status: "finished",
             },
             {
                 title: "Move all shaders to Slang",
