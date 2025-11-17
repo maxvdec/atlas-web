@@ -38,7 +38,7 @@
                 title: "Modernize Documentation",
                 description: `Revamp the existing documentation to improve clarity, organization, and accessibility,
                     making it easier for developers to learn and use Atlas Engine.`,
-                status: "planned",
+                status: "finished",
             },
             {
                 title: "Add examples and tutorials for the Engine",
