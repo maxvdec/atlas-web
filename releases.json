@@ -1,0 +1,68 @@
+{
+    "latest": "alpha4",
+    "releases": {
+        "alpha4": {
+            "name": "Alpha 4 (Latest)",
+            "url": "https://api.github.com/repos/maxvdec/atlas/releases/tags/v4.0.0-alpha",
+            "tag": "v4.0.0-alpha",
+            "blogPost": "",
+            "imageURL": "/images/sponza4.png"
+        },
+        "alpha3": {
+            "name": "Alpha 3",
+            "url": "https://api.github.com/repos/maxvdec/atlas/releases/tags/v3.0.0-alpha",
+            "tag": "v3.0.0-alpha",
+            "blogPost": "",
+            "imageURL": ""
+        },
+        "alpha2.1": {
+            "name": "Alpha 2.1",
+            "url": "https://api.github.com/repos/maxvdec/atlas/releases/tags/v2.1.0-alpha",
+            "tag": "v2.1.0-alpha",
+            "blogPost": "",
+            "imageURL": ""
+        },
+        "alpha2": {
+            "name": "Alpha 2",
+            "url": "https://api.github.com/repos/maxvdec/atlas/releases/tags/v2.0.0-alpha",
+            "tag": "v2.0.0-alpha",
+            "blogPost": "",
+            "imageURL": ""
+        },
+        "alpha1": {
+            "name": "Alpha 1",
+            "url": "https://api.github.com/repos/maxvdec/atlas/releases/tags/v1.0.0-alpha",
+            "tag": "v1.0.0-alpha",
+            "blogPost": "",
+            "imageURL": ""
+        },
+        "prealpha0.3": {
+            "name": "Pre-Alpha 0.3.0",
+            "url": "https://api.github.com/repos/maxvdec/atlas/releases/tags/v0.3.0-prealpha",
+            "tag": "v0.3.0-prealpha",
+            "blogPost": "",
+            "imageURL": ""
+        },
+        "prealpha0.2": {
+            "name": "Pre-Alpha 0.2.0",
+            "url": "https://api.github.com/repos/maxvdec/atlas/releases/tags/v0.2.0-prealpha",
+            "tag": "v0.2.0-prealpha",
+            "blogPost": "",
+            "imageURL": ""
+        },
+        "prealpha0.1.1": {
+            "name": "Pre-Alpha 0.1.1",
+            "url": "https://api.github.com/repos/maxvdec/atlas/releases/tags/v0.1.1-prealpha",
+            "tag": "v0.1.1-prealpha",
+            "blogPost": "",
+            "imageURL": ""
+        },
+        "prealpha0.1": {
+            "name": "Pre-Alpha 0.1.0",
+            "url": "https://api.github.com/repos/maxvdec/atlas/releases/tags/v0.1.0-prealpha",
+            "tag": "v0.1.0-prealpha",
+            "blogPost": "",
+            "imageURL": ""
+        }
+    }
+}
