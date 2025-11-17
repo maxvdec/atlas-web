@@ -1,5 +1,6 @@
 <script lang="ts">
     import { ChevronDown, Menu, X } from "@lucide/svelte";
+    import { onMount } from "svelte";
     import NavigationOptions from "./NavigationOptions.svelte";
     import type { NavigationOption } from "../../scripts/utils";
 
@@ -102,6 +103,26 @@
         label: "Documentation",
         href: "https://docs.atlasengine.org",
     };
+
+    onMount(() => {
+        if (typeof window === "undefined" || !("serviceWorker" in navigator)) {
+            return;
+        }
+
+        navigator.serviceWorker
+            .getRegistration()
+            .then((registration) => {
+                if (!registration) {
+                    return navigator.serviceWorker.register("/sw.js", {
+                        scope: "/",
+                    });
+                }
+                return registration;
+            })
+            .catch((error) => {
+                console.error("Service worker registration failed", error);
+            });
+    });
 </script>
 
 <header

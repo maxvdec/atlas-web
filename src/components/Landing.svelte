@@ -14,6 +14,22 @@
         type NewsItem,
     } from "../scripts/news";
 
+    const landingImageUrls = [
+        "/images/landing.png",
+        "/images/atlas_ball.png",
+        "/images/vscode_modules.png",
+        "/images/open_source.svg",
+        "/images/code_example.png",
+        "/images/create_example.png",
+    ];
+
+    const sponzaImageUrls = [
+        "/images/sponza.png",
+        "/images/sponza2.png",
+        "/images/sponza3.png",
+        "/images/sponza4.png",
+    ];
+
     let randomNumbers100 = Array.from({ length: 100 }, () =>
         Math.floor(Math.random() * 100),
     );
@@ -44,7 +60,32 @@
         }
     };
 
-    onMount(loadLatestNews);
+    const warmImageCache = async () => {
+        if (typeof window === "undefined") {
+            return;
+        }
+
+        const urls = Array.from(
+            new Set([...landingImageUrls, ...sponzaImageUrls]),
+        );
+
+        try {
+            await Promise.all(
+                urls.map((url) =>
+                    fetch(url, { cache: "force-cache" }).catch((error) => {
+                        console.warn(`Prefetch failed for ${url}`, error);
+                    }),
+                ),
+            );
+        } catch (error) {
+            console.warn("Image warmup encountered an error", error);
+        }
+    };
+
+    onMount(() => {
+        loadLatestNews();
+        warmImageCache();
+    });
 </script>
 
 <div>
