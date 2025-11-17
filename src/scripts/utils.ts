@@ -11,3 +11,5 @@ export interface NavigationGroup {
 export interface NavigationOption {
     groups: NavigationGroup[];
 }
+
+console.log("utils");
