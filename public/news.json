@@ -5,5 +5,12 @@
         "image": "/images/sponza4.png",
         "markdown": "/news/atlas-website-release.md",
         "date": "2025-11-15"
+    },
+    {
+        "name": "Migrated to Opal",
+        "desc": "The Atlas Engine has migrated from OpenGL to Opal, our in-house abstraction layer for OpenGL and Vulkan.",
+        "image": "/images/sponza3.png",
+        "markdown": "/news/migrated-to-opal.md",
+        "date": "2025-11-28"
     }
 ]

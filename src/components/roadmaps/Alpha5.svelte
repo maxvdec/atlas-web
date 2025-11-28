@@ -14,12 +14,18 @@
                 title: "Create Opal for Core Rendering",
                 description: `Introducing Opal, our in-house rendering backend that uses Vulkan API as well as OpenGL,
                     providing better performance and modern rendering techniques.`,
-                status: "planned",
+                status: "finished",
             },
             {
                 title: "Migrate Atlas to Opal",
                 description: `Transition the core rendering engine of Atlas from OpenGL to Opal,
                     ensuring compatibility and performance improvements.`,
+                status: "finished",
+            },
+            {
+                title: "Add Vulkan support to Opal",
+                description: `Implement Vulkan support in the Opal rendering backend,
+                    enabling advanced graphics features and improved performance on supported hardware.`,
                 status: "planned",
             },
             {
