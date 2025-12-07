@@ -10,7 +10,7 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
     integrations: [svelte(), sitemap()],
     redirects: {
-        "/roadmap/latest": "/roadmap/alpha5",
+        "/roadmap/latest": "/roadmap/alpha6",
     },
 
     vite: {

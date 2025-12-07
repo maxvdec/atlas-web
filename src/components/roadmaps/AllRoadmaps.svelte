@@ -10,6 +10,12 @@
 
     let roadmaps: RoadmapSummary[] = [
         {
+            title: "Alpha 6 Roadmap",
+            roadmapURL: "/roadmap/alpha6",
+            description:
+                "Discover the Alpha 6 roadmap, featuring the development of the Atlas Tracer debug application for macOS, Jolt Physics integration, and solutions for Vulkan-related issues.",
+        },
+        {
             title: "Alpha 5 Roadmap",
             roadmapURL: "/roadmap/alpha5",
             description:
