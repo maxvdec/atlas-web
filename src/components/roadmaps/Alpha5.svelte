@@ -26,13 +26,7 @@
                 title: "Add Vulkan support to Opal",
                 description: `Implement Vulkan support in the Opal rendering backend,
                     enabling advanced graphics features and improved performance on supported hardware.`,
-                status: "planned",
-            },
-            {
-                title: "Integrate the Jolt Physics Engine",
-                description: `Incorporate Jolt Physics into Atlas to provide advanced physics simulation capabilities,
-                    enhancing the realism of physical interactions within the engine.`,
-                status: "planned",
+                status: "finished",
             },
             {
                 title: "New Website Launch",
@@ -51,12 +45,6 @@
                 description: `Develop comprehensive examples and tutorials to help users understand and utilize the 
                 features of Atlas Engine effectively.`,
                 status: "finished",
-            },
-            {
-                title: "Move all shaders to Slang",
-                description: `Transition all existing shaders in Atlas Engine to the Slang shader language,
-                    ensuring consistency and leveraging the benefits of the new language.`,
-                status: "planned",
             },
         ],
     };
