@@ -1,12 +1,19 @@
 {
-    "latest": "alpha4",
+    "latest": "alpha5",
     "releases": {
+        "alpha5": {
+            "name": "Alpha 5 (Latest)",
+            "url": "https://api.github.com/repos/maxvdec/atlas/releases/tags/v5.0.0-alpha",
+            "tag": "v5.0.0-alpha",
+            "blogPost": "/news/alpha5.md",
+            "imageURL": "/images/sponza4.png"
+        },
         "alpha4": {
-            "name": "Alpha 4 (Latest)",
+            "name": "Alpha 4",
             "url": "https://api.github.com/repos/maxvdec/atlas/releases/tags/v4.0.0-alpha",
             "tag": "v4.0.0-alpha",
             "blogPost": "",
-            "imageURL": "/images/sponza4.png"
+            "imageURL": ""
         },
         "alpha3": {
             "name": "Alpha 3",
