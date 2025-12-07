@@ -12,5 +12,12 @@
         "image": "/images/sponza3.png",
         "markdown": "/news/migrated-to-opal.md",
         "date": "2025-11-28"
+    },
+    {
+        "name": "Alpha 5 Released!",
+        "desc": "Atlas Engine Alpha 5 is out now! This release brings Vulkan support, performance improvements, and new features.",
+        "image": "/images/sponza4.png",
+        "markdown": "/news/alpha5.md",
+        "date": "2025-12-07"
     }
 ]
