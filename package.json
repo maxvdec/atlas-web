@@ -10,20 +10,20 @@
     },
     "dependencies": {
         "@astrojs/sitemap": "^3.6.0",
-        "@astrojs/svelte": "^7.2.2",
+        "@astrojs/svelte": "^7.2.4",
         "@lucide/svelte": "^0.553.0",
-        "@tailwindcss/vite": "^4.1.17",
-        "astro": "^5.15.4",
+        "@tailwindcss/vite": "^4.1.18",
+        "astro": "^5.16.6",
         "highlight.js": "^11.10.0",
         "markdown-it": "^14.1.0",
-        "mermaid": "^10.4.0",
-        "svelte": "^5.43.4",
+        "mermaid": "^10.9.5",
+        "svelte": "^5.46.1",
         "typescript": "^5.9.3"
     },
     "devDependencies": {
         "@types/markdown-it": "^14.0.6",
-        "prettier": "^3.6.2",
+        "prettier": "^3.7.4",
         "prettier-plugin-astro": "^0.14.1",
-        "prettier-plugin-svelte": "^3.4.0"
+        "prettier-plugin-svelte": "^3.4.1"
     }
 }
