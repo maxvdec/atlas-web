@@ -19,5 +19,12 @@
         "image": "/images/sponza4.png",
         "markdown": "/news/alpha5.md",
         "date": "2025-12-07"
+    },
+    {
+        "name": "Atlas Tracer is here!",
+        "desc": "Check out the new things in debugging for the Atlas Engine with Atlas Tracer, our new macOS debug application.",
+        "image": "/images/tracer.png",
+        "markdown": "/news/atlas-tracer.md",
+        "date": "2025-12-24"
     }
 ]
