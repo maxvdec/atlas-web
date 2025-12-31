@@ -23,7 +23,7 @@
             {
                 title: "Integrate Jolt Physics into Atlas Engine",
                 description: `Incorporate Jolt Physics, a high-performance physics engine, into the Atlas Engine to enhance physics simulation capabilities.`,
-                status: "planned",
+                status: "finished",
             },
             {
                 title: "Solve Vulkan related issues",
