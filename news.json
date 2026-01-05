@@ -26,5 +26,12 @@
         "image": "/images/tracer.png",
         "markdown": "/news/atlas-tracer.md",
         "date": "2025-12-24"
+    },
+    {
+        "name": "2025 at Atlas",
+        "desc": "This is our first year of development for the Atlas Engine. We've made significant progress and are excited to share our achievements with you.",
+        "image": "/images/sponza4.png",
+        "markdown": "/news/2025.md",
+        "date": "2026-01-05"
     }
 ]
