@@ -5,7 +5,7 @@
             "name": "Alpha 5 (Latest)",
             "url": "https://api.github.com/repos/maxvdec/atlas/releases/tags/v5.0.0-alpha",
             "tag": "v5.0.0-alpha",
-            "blogPost": "/news/alpha5.md",
+            "blogPost": "/news/alpha5",
             "imageURL": "/images/sponza4.png"
         },
         "alpha4": {
