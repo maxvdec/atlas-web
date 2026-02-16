@@ -29,7 +29,12 @@
                 title: "Solve Vulkan related issues",
                 description: `Address and resolve various issues related to Vulkan API usage within the Atlas Engine,
                     improving stability and performance on supported platforms.`,
-                status: "planned",
+                status: "finished",
+            },
+            {
+                title: "Add Metal support for Atlas Engine",
+                description: `Implement support for Apple's Metal graphics API in the Atlas Engine, allowing it to run efficiently on macOS devices.`,
+                status: "finished",
             },
         ],
     };
