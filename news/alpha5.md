@@ -32,3 +32,7 @@ That's everything for now! We hope you enjoy using Atlas Engine Alpha 5 and expl
 
 [Check the release in Github!](https://github.com/maxvdec/atlas/releases/tag/v5.0.0-alpha)
 [Download Atlas Engine Alpha 5](https://atlasengine.org/download)
+
+Max Van den Eynde, Lead Developer of Atlas Engine
+
+![Sign](/images/sign.png)

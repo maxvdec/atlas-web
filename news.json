@@ -21,6 +21,13 @@
         "date": "2025-12-07"
     },
     {
+        "name": "Alpha 6 just landed!",
+        "desc": "Atlas Engine Alpha 6 has just been released! This release includes support for Metal, Atlas Tracer and Jolt Physics",
+        "image": "/images/sponza.png",
+        "markdown": "/news/alpha6.md",
+        "date": "2026-02-23"
+    },
+    {
         "name": "Atlas Tracer is here!",
         "desc": "Check out the new things in debugging for the Atlas Engine with Atlas Tracer, our new macOS debug application.",
         "image": "/images/tracer.png",
