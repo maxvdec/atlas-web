@@ -10,6 +10,12 @@
 
     let roadmaps: RoadmapSummary[] = [
         {
+            title: "Alpha 7 Roadmap",
+            roadmapURL: "/roadmap/alpha7",
+            description:
+                "Discover the Alpha 7 roadmap, featuring the implementation of ray tracing support, enhanced material system, and performance optimizations across various platforms.",
+        },
+        {
             title: "Alpha 6 Roadmap",
             roadmapURL: "/roadmap/alpha6",
             description:
