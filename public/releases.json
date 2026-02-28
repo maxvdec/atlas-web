@@ -1,6 +1,13 @@
 {
-    "latest": "alpha6",
+    "latest": "alpha61",
     "releases": {
+        "alpha61": {
+            "name": "Alpha 6.1",
+            "url": "https://api.github.com/repos/maxvdec/atlas/releases/tags/v6.1.0-alpha",
+            "tag": "v6.1.0-alpha",
+            "blogPost": "/news/alpha61",
+            "imageURL": "/images/sponza4.png"
+        },
         "alpha6": {
             "name": "Alpha 6 (Latest)",
             "url": "https://api.github.com/repos/maxvdec/atlas/releases/tags/v6.0.0-alpha",
