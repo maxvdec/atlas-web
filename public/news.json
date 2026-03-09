@@ -28,6 +28,13 @@
         "date": "2026-02-23"
     },
     {
+        "name": "Let us welcome you to Alpha 7!",
+        "desc": "Atlas Engine Alpha 7 is here! This release adds support for DDGI and Path Tracing",
+        "image": "/images/cornell.png",
+        "markdown": "/news/alpha7.md",
+        "date": "2026-03-9"
+    },
+    {
         "name": "Atlas Tracer is here!",
         "desc": "Check out the new things in debugging for the Atlas Engine with Atlas Tracer, our new macOS debug application.",
         "image": "/images/tracer.png",

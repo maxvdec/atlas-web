@@ -34,7 +34,7 @@
             {
                 title: "True multiplatform support",
                 description: `Improve the CLI and build system of the Atlas Engine to ensure seamless support for multiple platforms, including Windows, macOS, Linux, allowing developers to easily target a wide range of devices.`,
-                status: "pending",
+                status: "finished",
             },
         ],
     };
