@@ -13,23 +13,23 @@
             {
                 title: "Photon Global Illumination",
                 description: `Implement Photon Global Illumination (GI) in the Atlas Engine to enhance the realism of lighting and shadows in 3D scenes, providing more accurate and dynamic lighting effects.`,
-                status: "pending",
+                status: "finished",
             },
             {
                 title: "Photon Ray Tracing",
                 description: `Integrate Photon Ray Tracing into the Atlas Engine to enable real-time ray tracing capabilities, allowing for improved visual fidelity and realistic rendering of reflections, refractions, and shadows.`,
-                status: "pending",
+                status: "finished",
             },
             {
                 title: "Move to Ninja build system",
                 description: `Transition the Atlas Engine's build system to Ninja, a high-performance build system that can significantly reduce build times and improve developer productivity.`,
-                status: "pending",
+                status: "finished",
             },
             {
                 title: "Solve C++ Errors and Style Issues",
                 description: `Address and resolve various issues related to C++ compilation and code style within the Atlas Engine,
                     improving stability and maintainability of the codebase.`,
-                status: "pending",
+                status: "finished",
             },
             {
                 title: "True multiplatform support",
