@@ -26,3 +26,14 @@ But talking about Alpha 8, we want to spoil a bit of what this release will incl
 * Better UI for the engine (Graphite), including powerful UI components as never before. (This will have to power the UI editor in Alpha 9)
 * Support for controller input, which will allow you to easily add support for gamepads and other controllers in your games.
 * An event system that will allow you to easily create and manage events in your games, which will make it easier to create complex interactions and gameplay mechanics.
+
+
+This is all for now. Stay tuned for more updates and announcements as we continue to develop Atlas Engine and push the boundaries of game development! We can't wait to see what you create with it!
+
+[Check the release in Github!](https://github.com/maxvdec/atlas/releases/tag/v6.0.0-alpha)
+[Download Atlas Engine Alpha 6](https://atlasengine.org/download)
+[Join our Discord Server](https://discord.gg/WKrxKtr7kW)
+
+Max Van den Eynde, Lead Developer of Atlas Engine
+![Sign](/images/sign.png)
+
