@@ -23,7 +23,7 @@
             {
                 title: "Fix the CLI",
                 description: `Address and resolve various issues related to the Command Line Interface (CLI) of the Atlas Engine, improving its functionality, usability, and overall user experience for developers.`,
-                status: "planned",
+                status: "finished",
             },
         ]
     };

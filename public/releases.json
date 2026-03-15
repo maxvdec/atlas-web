@@ -1,8 +1,15 @@
 {
-    "latest": "alpha7",
+    "latest": "alpha8",
     "releases": {
+        "alpha 8": {
+            "name": "Alpha 8 (Latest)",
+            "url": "https://api.github.com/repos/maxvdec/atlas/releases/tags/v8.0.0-alpha",
+            "tag": "v8.0.0-alpha",
+            "blogPost": "/news/alpha8",
+            "imageURL": "/images/cornell.png"
+        },
         "alpha 7": {
-            "name": "Alpha 7 (Latest)",
+            "name": "Alpha 7",
             "url": "https://api.github.com/repos/maxvdec/atlas/releases/tags/v7.0.0-alpha",
             "tag": "v7.0.0-alpha",
             "blogPost": "/news/alpha7",
