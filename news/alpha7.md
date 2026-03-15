@@ -30,8 +30,8 @@ But talking about Alpha 8, we want to spoil a bit of what this release will incl
 
 This is all for now. Stay tuned for more updates and announcements as we continue to develop Atlas Engine and push the boundaries of game development! We can't wait to see what you create with it!
 
-[Check the release in Github!](https://github.com/maxvdec/atlas/releases/tag/v6.0.0-alpha)
-[Download Atlas Engine Alpha 6](https://atlasengine.org/download)
+[Check the release in Github!](https://github.com/maxvdec/atlas/releases/tag/v7.0.0-alpha)
+[Download Atlas Engine Alpha 7](https://atlasengine.org/download)
 [Join our Discord Server](https://discord.gg/WKrxKtr7kW)
 
 Max Van den Eynde, Lead Developer of Atlas Engine
