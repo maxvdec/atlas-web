@@ -3,6 +3,7 @@
     import { ChevronRight, Download } from "@lucide/svelte";
     import Footer from "./navigation/Footer.svelte";
     import NavBar from "./navigation/NavBar.svelte";
+    import { freshFetch } from "../scripts/utils";
 
     interface ReleasesConfigEntry {
         name: string;
@@ -57,7 +58,7 @@
 
     onMount(async () => {
         try {
-            const configResponse = await fetch("/releases.json");
+            const configResponse = await freshFetch("/releases.json");
             if (!configResponse.ok) {
                 throw new Error("Unable to load releases configuration.");
             }

@@ -13,6 +13,7 @@
         mapBlogPostRawToNewsItem,
         type NewsItem,
     } from "../scripts/news";
+    import { freshFetch } from "../scripts/utils";
 
     const landingImageUrls = [
         "/images/landing.png",
@@ -43,7 +44,7 @@
         newsError = null;
 
         try {
-            const response = await fetch(NEWS_JSON_ENDPOINT);
+            const response = await freshFetch(NEWS_JSON_ENDPOINT);
             if (!response.ok) {
                 throw new Error("Unable to load the latest news.");
             }
@@ -271,7 +272,7 @@
             <hr class="border-gray-500" />
         </div>
 
-        <section class="atlas-container mt-10 flex flex-col gap-10">
+        <section class="atlas-container mt-10 flex flex-col gap-10 pb-8">
             <p class="font-sans font-bold text-3xl">Install Atlas</p>
             <BentoLayout>
                 <div class="aurora-container">

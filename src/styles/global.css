@@ -1,8 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 @import "tailwindcss";
 
 html {
-    font-family: "Inter", sans-serif;
+    font-family: "Manrope", sans-serif;
+    background: #000000;
+    color-scheme: dark;
+}
+
+body {
+    min-height: 100vh;
+    background: #000000;
 }
 
 @layer components {
@@ -10,7 +17,7 @@ html {
         margin-left: auto;
         margin-right: auto;
         width: 100%;
-        max-width: 1200px;
+        max-width: 1280px;
         padding-left: 1rem;
         padding-right: 1rem;
     }
@@ -20,12 +27,6 @@ html {
             padding-left: 1.5rem;
             padding-right: 1.5rem;
         }
-    }
-
-    .atlas-section {
-        display: flex;
-        flex-direction: column;
-        gap: 2.5rem;
     }
 }
 

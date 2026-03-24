@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-<footer class="flex flex-col justify-center">
+<footer class="flex flex-col justify-center pb-6 pt-2">
     <hr class="border-gray-700" />
     <div class="flex justify-center my-4 px-4">
         <div class="atlas-container">

@@ -7,6 +7,7 @@
     import BentoLayout from "./ui/bento/BentoLayout.svelte";
     import BentoRow from "./ui/bento/BentoRow.svelte";
     import BentoCard from "./ui/bento/BentoCard.svelte";
+    import { freshFetch } from "../scripts/utils";
 
     interface ReleaseConfigEntry {
         name: string;
@@ -118,7 +119,7 @@
 
     onMount(async () => {
         try {
-            const configResponse = await fetch("/releases.json");
+            const configResponse = await freshFetch("/releases.json");
             if (!configResponse.ok) {
                 throw new Error("Unable to load releases configuration.");
             }

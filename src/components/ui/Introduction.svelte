@@ -2,8 +2,8 @@
     let { name, description = "", imageSrc = "" } = $props();
 </script>
 
-<div class="mt-24 text-white mb-16">
-    <div class="mx-auto flex flex-col px-6 sm:px-10 lg:px-20">
+<div class="mt-24 text-white mb-14">
+    <div class="atlas-container flex flex-col">
         <div
             class="relative w-full max-w-[1350px] h-[420px] sm:h-[520px] lg:h-[550px] mx-auto rounded-3xl overflow-hidden shadow-lg"
         >

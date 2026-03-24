@@ -29,7 +29,7 @@ export async function getStaticPaths() {
 		<meta name="generator" content={Astro.generator} />
 		<title>{`Atlas Engine - ${slug} release`}</title>
 	</head>
-	<body class="bg-gray-950">
+	<body class="bg-transparent">
 		<div>
 			<ReleaseDetail releaseKey={slug} client:load />
 		</div>

@@ -1,5 +1,4 @@
 <script lang="ts">
-    import type { propsToFilename } from "astro/assets/utils";
     import { scrollReveal } from "../../../scripts/scrollReveal";
 
     let {

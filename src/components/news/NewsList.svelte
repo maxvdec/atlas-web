@@ -10,6 +10,7 @@
         sortNewsByDateDesc,
         type NewsItem,
     } from "../../scripts/news";
+    import { freshFetch } from "../../scripts/utils";
 
     let newsItems: NewsItem[] = [];
     let loading = true;
@@ -20,7 +21,7 @@
         errorMessage = null;
 
         try {
-            const response = await fetch(NEWS_JSON_ENDPOINT);
+            const response = await freshFetch(NEWS_JSON_ENDPOINT);
             if (!response.ok) {
                 throw new Error("Unable to load news feed.");
             }
@@ -39,9 +40,9 @@
     onMount(loadNews);
 </script>
 
-<div class="min-h-screen bg-gray-950 text-white">
+<div class="min-h-screen bg-black text-white">
     <NavBar></NavBar>
-    <main class="mx-auto flex w-full max-w-6xl flex-col gap-8 px-6 py-20">
+    <main class="mx-auto flex w-full max-w-6xl flex-col gap-8 px-6 py-24">
         <div class="space-y-3">
             <p class="text-sm uppercase tracking-[0.3em] text-blue-400">
                 Atlas Updates

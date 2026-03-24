@@ -110,15 +110,11 @@
         }
 
         navigator.serviceWorker
-            .getRegistration()
-            .then((registration) => {
-                if (!registration) {
-                    return navigator.serviceWorker.register("/sw.js", {
-                        scope: "/",
-                    });
-                }
-                return registration;
+            .register("/sw.js", {
+                scope: "/",
+                updateViaCache: "none",
             })
+            .then((registration) => registration.update())
             .catch((error) => {
                 console.error("Service worker registration failed", error);
             });
@@ -126,7 +122,7 @@
 </script>
 
 <header
-    class="fixed top-0 left-0 z-40 flex h-16 w-full items-center gap-4 border border-gray-700 bg-gray-950/20 px-4 shadow-md backdrop-blur-sm sm:px-8"
+    class="fixed top-0 left-0 z-40 flex h-16 w-full items-center gap-4 border border-gray-700 bg-black/70 px-4 shadow-md backdrop-blur-sm sm:px-8"
 >
     <div class="flex flex-1 items-center">
         <img
@@ -223,7 +219,7 @@
             aria-hidden="true"
         ></div>
         <div
-            class="absolute inset-x-0 top-16 h-[calc(100vh-4rem)] overflow-y-auto border-t border-gray-800 bg-gray-950/95 px-4 pb-10"
+            class="absolute inset-x-0 top-16 h-[calc(100vh-4rem)] overflow-y-auto border-t border-gray-800 bg-black/95 px-4 pb-10"
         >
             <div
                 class="mx-auto flex w-full max-w-md flex-col gap-8 py-6 text-white"

@@ -7,6 +7,7 @@
         mapBlogPostRawToNewsItem,
         type NewsItem,
     } from "../../scripts/news";
+    import { freshFetch } from "../../scripts/utils";
 
     let { slug, article: initialArticle = null } = $props<{
         slug: string;
@@ -27,7 +28,7 @@
         errorMessage = null;
 
         try {
-            const response = await fetch(NEWS_JSON_ENDPOINT);
+            const response = await freshFetch(NEWS_JSON_ENDPOINT);
             if (!response.ok) {
                 throw new Error("Unable to load news feed");
             }
@@ -58,13 +59,13 @@
 
 {#if loading}
     <div
-        class="flex min-h-screen items-center justify-center bg-gray-950 text-gray-400"
+        class="flex min-h-screen items-center justify-center px-6 text-slate-300/[0.76]"
     >
         Loading article...
     </div>
 {:else if errorMessage}
     <div
-        class="flex min-h-screen items-center justify-center bg-gray-950 px-6 text-center text-red-400"
+        class="flex min-h-screen items-center justify-center px-6 text-center text-rose-200"
     >
         {errorMessage}
     </div>

@@ -14,6 +14,7 @@
     import BentoCard from "./ui/bento/BentoCard.svelte";
     import NavBar from "./navigation/NavBar.svelte";
     import Footer from "./navigation/Footer.svelte";
+    import { freshFetch } from "../scripts/utils";
 
     let {
         title,
@@ -192,7 +193,7 @@
         errorMessage = null;
 
         try {
-            const response = await fetch(url);
+            const response = await freshFetch(url);
             if (!response.ok) {
                 throw new Error("Unable to load markdown content.");
             }
