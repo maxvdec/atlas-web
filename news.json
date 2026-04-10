@@ -54,5 +54,12 @@
         "image": "/images/cornell.png",
         "markdown": "/news/alpha8.md",
         "date": "2026-03-15"
+    },
+    {
+        "name": "Hello, Neutral Software!",
+        "desc": "Atlas Engine now joins Neutral Sofware, a company dedicated to creating high-quality software for developers.",
+        "image": "/images/neutral.png",
+        "markdown": "/news/neutral.md",
+        "date": "2026-04-10"
     }
 ]
