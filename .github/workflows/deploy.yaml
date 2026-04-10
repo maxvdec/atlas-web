@@ -3,7 +3,9 @@ name: Deploy Website
 on:
     push:
         branches: [main]
-    pull_request:
+
+permissions:
+    contents: write
 
 jobs:
     build:
@@ -11,7 +13,7 @@ jobs:
 
         steps:
             - name: Checkout repository
-              uses: actions/checkout@v5
+              uses: actions/checkout@v4
 
             - name: Set up Bun
               uses: oven-sh/setup-bun@v2
@@ -23,7 +25,7 @@ jobs:
               run: bun run build
 
             - name: Deploy dist folder to dist branch
-              uses: peaceiris/actions-gh-pages@v3
+              uses: peaceiris/actions-gh-pages@v4
               with:
                   github_token: ${{ secrets.GITHUB_TOKEN }}
                   publish_branch: dist
